@@ -15,13 +15,13 @@ This App is deployed in Amazon EC2 and for Demo I have enabled CORS
 
 1. Spring Boot is deployed in EC2
 
- URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)[l](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)
+ URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)[](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)
 
  
 
 1. The UI Is Hosted in EC2
 
- URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)[l](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)
+ URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)[](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)
 
 1. The DataBase is on another Amazon Lunix EC2 instance deployed in a docker container
 
