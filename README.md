@@ -13,15 +13,18 @@ This App is deployed in Amazon EC2 and for Demo I have enabled CORS
 
 1. Github URL : [https://github.com/deepaknchandwani/hclbookingapi](https://github.com/deepaknchandwani/hclbookingapi)
 
-1. Spring Boot is deployed in EC2
+1. Spring Boot is deployed in EC2 Non SSL
 
  URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)[](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/swagger-ui.html)
 
- 
 
-1. The UI Is Hosted in EC2
+1. The UI Is Hosted in EC2 NON SSL
 
  URL : [http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)[](http://ec2-18-189-192-25.us-east-2.compute.amazonaws.com:8085/)
+ 
+1. The UI Is Hosted in S3 SSL
+
+ URL : [https://hcldemoapi.s3.us-east-2.amazonaws.com/index.html](https://hcldemoapi.s3.us-east-2.amazonaws.com/index.html)[](https://hcldemoapi.s3.us-east-2.amazonaws.com/index.html) 
 
 1. The DataBase is on another Amazon Lunix EC2 instance deployed in a docker container
 
