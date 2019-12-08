@@ -1,0 +1,14 @@
+<form class="form-inline">
+        <div class="form-group"> 
+        
+          <div class="input-group ">
+          <input id="datepicker" class="form-control col-7" placeholder="{{dateWording}}" ngbDatepicker #date="ngbDatepicker" required pattern="[0-9]{4}[-][0-9]{2}[-][0-9]{2}" [(ngModel)]="currentDateObj" name="date" (dateSelect) = "onSelect($event)">
+          <div class="input-group-append">
+              <button class="btn btn-outline-secondary picto-calender" (click)="date.toggle()" type="button"></button>
+          </div>
+      </div>
+        </div>
+      </form>
+      
+      
+      

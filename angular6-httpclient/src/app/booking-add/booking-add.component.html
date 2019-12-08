@@ -1,0 +1,73 @@
+<div class="container">
+
+  <nav class="navbar navbar-dark " style=" background-color: #a69dfa; width:100%;">
+    <h2 class="display-4" style="height: 121px; color:white; background-color: #6f65cf; width:100%;">
+      HCL TEST BOOKING API</h2>
+    <p class="lead"><span class="navbar-brand mb-0 ">
+        <button style="  background-color: #dfdcfa;">
+          <a routerLink="/"> Home</a>
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="add()" style=" color:white; background-color: #6f65cf;">
+          Add Booking
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="add()" style="background-color: #dfdcfa;">
+          Update Booking
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </span></p>
+
+  </nav>
+
+
+  <div class="container-lg">
+    <div class="mx-auto">
+      <div class="row container-12 justify-content-center align-items-center">
+        <div class="card" style=" background-color: #dfdcfa; width:98%;">
+          <div class="card-body ">
+            <h5 class="card-title"> Meeting Reservation Booking </h5>
+
+            <h6 class="card-title"> Meeting Start : </h6>
+
+            <div class="input-group ">
+              <input id="datepicker" class="form-control col-2" placeholder="{{dateWording}}" ngbDatepicker
+                #date="ngbDatepicker" required pattern="[0-9]{4}[-][0-9]{2}[-][0-9]{2}" [(ngModel)]="startDateObj"
+                name="date" (dateSelect)="onSelect($event)">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary picto-calender" (click)="date.toggle()" type="button"></button>
+              </div>
+            </div>
+            <br />
+            <h6 class="card-title"> Meeting End : </h6>
+            <div class="input-group ">
+              <input name="dp" class="form-control col-2" placeholder="{{dateWording}}" ngbDatepicker
+                #d="ngbDatepicker" required pattern="[0-9]{4}[-][0-9]{2}[-][0-9]{2}" [(ngModel)]="endDateObj"
+                name="date" (dateSelect)="onSelect2($event)">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary picto-calender" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+            <br />
+            <h6 class="card-title"> Purpose : </h6>
+            <input [(ngModel)]="bookingData.purpose" placeholder="Booking Purpose" />
+
+            <br /><br />
+            <h6 class="card-title"> Room:Id : </h6>
+            <input [(ngModel)]="bookingData.roomId" placeholder="Booking RoomId" />
+            <br /> <br/>
+
+            <button (click)="addProduct()">Save</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+    <div>
+
+    </div>
+
+  </div>
+
+</div>

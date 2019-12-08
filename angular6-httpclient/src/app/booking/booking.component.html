@@ -1,0 +1,56 @@
+<div class="container">
+        
+     
+
+      <nav class="navbar navbar-dark "
+      style=" background-color: #a69dfa; width:100%;"
+      >
+          <h2 class="display-4" style="height: 121px; color:white; background-color: #6f65cf; width:100%;">
+            HCL TEST BOOKING API</h2>
+          <p class="lead"><span class="navbar-brand mb-0 h1">  
+              <button (click)="add()" style=" color:white; background-color: #6f65cf;">
+                  Home
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button (click)="add()" style="  background-color: #dfdcfa;" >
+              Add Booking
+            </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button (click)="add()" style="background-color: #dfdcfa;">
+                Update Booking
+              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+             
+          </span></p>
+
+        </nav>
+
+        
+ 
+ 
+<div class="container-lg">
+<div class="mx-auto"  *ngFor="let p of bookings; let i=index;">
+        <div class="row container-12 justify-content-center align-items-center">        
+          <div class="card" style=" background-color: #dfdcfa; width:98%;">
+                <div class="card-body " >
+                  <h5 class="card-title">{{i+1}}. 
+                    
+                    Meeting Reservation Id : {{p.reservationId}} 
+                    (  <a routerLink="/product-details/{{p.reservationId}}"> details</a> )</h5>
+                  
+                  <h6 class="card-subtitle mb-2 text-muted"> Meeting Start : {{p.dateBegin}}</h6>
+                  <h6 class="card-subtitle mb-2 text-muted"> Meeting Start : {{p.dateEnd}}</h6>
+                  <h6 class="card-subtitle mb-2 text-muted"> Meeting Room Id : {{p.roomId}}</h6>
+                  <h6 class="card-subtitle mb-2 text-muted"> Meeting Name : {{p.purpose}}</h6>
+                  <p class="card-text"> Details About Reservation
+                      ( {{p.dateBegin}} / {{p.dateEnd}} / {{p.roomId}} / {{p.purpose}} )
+                  </p>
+                  
+                  <br/><br/>
+
+                  <button class="delete" title="delete product"
+                  (click)="delete(p.reservationId)">Delete Booking</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
